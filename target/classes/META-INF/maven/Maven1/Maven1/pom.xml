@@ -1,0 +1,103 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Maven1</groupId>
+  <artifactId>Maven1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+
+  
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.27.0</version>
+</dependency>
+
+
+
+  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.5</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.9.2</version>
+</dependency>
+  </dependencies>
+  
+  
+<!-- This block is used if you want to run through testNG.XML file-->
+
+   <!-- 
+  <build>
+    <plugins>
+    <!- Surefire Plugin to run TestNG tests->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>                       <!-> Make sure to use the latest version ->
+      
+        <configuration>
+          <!- Specify the TestNG XML file ->
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>      <!-> Path to your TestNG XML ->
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>               
+  -->
+ 
+
+<!-- This block is used if you want to run all the test class directly by POM. XML file-->
+
+
+<build>
+  <plugins>
+    <!-- Surefire Plugin to run TestNG tests directly -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+
+     <version>2.22.2</version> <!-- Make sure to use the latest version -->      
+     
+      <configuration>
+        <!-- TestNG classes are automatically discovered in src/test/java -->
+        <includes>
+          <include>**/tests_for_interactions/DraggableTests.java</include> <!-- This will include all classes ending with Test -->
+        </includes>
+      
+        
+      <!-- Pass the browser parameter to Test file -->
+        <systemProperties>
+          <property>
+            <name>browser</name>
+            <value>chrome</value> <!-- Specify the default browser here -->
+          </property>
+        </systemProperties>    
+        
+         
+          
+      </configuration>
+    </plugin>
+  </plugins>
+</build>                         
+</project>

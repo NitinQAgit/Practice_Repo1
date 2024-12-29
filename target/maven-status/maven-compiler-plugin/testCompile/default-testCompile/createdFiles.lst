@@ -1,0 +1,5 @@
+tests_for_interactions\DroppableTests.class
+tests_for_interactions\ResizableTests.class
+tests_for_interactions\SelectableTests.class
+tests_for_interactions\DraggableTests.class
+tests_for_interactions\SortableTests.class

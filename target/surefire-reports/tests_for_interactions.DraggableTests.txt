@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: tests_for_interactions.DraggableTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.634 s - in tests_for_interactions.DraggableTests

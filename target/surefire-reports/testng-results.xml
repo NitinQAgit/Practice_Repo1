@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-28T17:18:20 IST" name="Surefire suite" finished-at="2024-12-28T17:18:31 IST" duration-ms="11007">
+    <groups>
+      <group name="regression">
+        <method signature="DraggableTests.clickoninteractions()[pri:1, instance:tests_for_interactions.DraggableTests@1d082e88]" name="clickoninteractions" class="tests_for_interactions.DraggableTests"/>
+        <method signature="DraggableTests.clickondraggableoption()[pri:2, instance:tests_for_interactions.DraggableTests@1d082e88]" name="clickondraggableoption" class="tests_for_interactions.DraggableTests"/>
+        <method signature="DraggableTests.draggablecursorandValidate()[pri:4, instance:tests_for_interactions.DraggableTests@1d082e88]" name="draggablecursorandValidate" class="tests_for_interactions.DraggableTests"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="DraggableTests.clickoninteractions()[pri:1, instance:tests_for_interactions.DraggableTests@1d082e88]" name="clickoninteractions" class="tests_for_interactions.DraggableTests"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="DraggableTests.clickoninteractions()[pri:1, instance:tests_for_interactions.DraggableTests@1d082e88]" name="clickoninteractions" class="tests_for_interactions.DraggableTests"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-12-28T17:18:20 IST" name="Surefire test" finished-at="2024-12-28T17:18:31 IST" duration-ms="11007">
+      <class name="tests_for_interactions.DraggableTests">
+        <test-method is-config="true" signature="launchurl(java.lang.String)[pri:0, instance:tests_for_interactions.DraggableTests@1d082e88]" started-at="2024-12-28T17:18:20 IST" name="launchurl" finished-at="2024-12-28T17:18:29 IST" duration-ms="9310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchurl -->
+        <test-method signature="clickoninteractions()[pri:1, instance:tests_for_interactions.DraggableTests@1d082e88]" started-at="2024-12-28T17:18:29 IST" name="clickoninteractions" finished-at="2024-12-28T17:18:29 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickoninteractions -->
+        <test-method signature="clickondraggableoption()[pri:2, instance:tests_for_interactions.DraggableTests@1d082e88]" started-at="2024-12-28T17:18:29 IST" name="clickondraggableoption" finished-at="2024-12-28T17:18:30 IST" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickondraggableoption -->
+        <test-method signature="draggablecursorandValidate()[pri:4, instance:tests_for_interactions.DraggableTests@1d082e88]" started-at="2024-12-28T17:18:30 IST" name="draggablecursorandValidate" finished-at="2024-12-28T17:18:31 IST" duration-ms="694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- draggablecursorandValidate -->
+      </class> <!-- tests_for_interactions.DraggableTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

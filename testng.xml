@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+ 
+  <!-- Suite-level parameter -->
+  <parameter name="browser" value="chrome"></parameter>            <!-- suit level parameter-->
+
+
+  <!-- Package: tests_for_interactions -->
+  
+
+  <test name="DraggableTests" enabled="false">
+    <parameter name="browser" value="chrome"></parameter>
+    <groups>
+       <run>
+       <include name="regression"></include>
+       </run>
+    </groups>
+    <classes>
+      <class name="tests_for_interactions.DraggableTests"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+  <test name="DroppableTests" enabled="false">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="tests_for_interactions.DroppableTests"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+  <test name="ResizableTests" enabled="false">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="tests_for_interactions.ResizableTests"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+  <test name="SelectableTests" enabled="true">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="tests_for_interactions.SelectableTests"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+  <test name="SortableTests" enabled="false">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="tests_for_interactions.SortableTests"/>
+    </classes>
+  </test> <!-- Test -->
+  
+
+
+</suite> <!-- Suite -->
