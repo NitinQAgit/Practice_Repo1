@@ -37,6 +37,7 @@ public class Practice_MavenLibrary5 {
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);     //implicitly wait for web page launch
 	driver.manage().window().maximize();
 	System.out.println("This is thr only chnage i have done in the project");
+	System.out.println("This is thr only chnage i have done in the project");
 	}}
 
 
