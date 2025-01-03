@@ -36,6 +36,8 @@ public class Practice_MavenLibrary5 {
     driver.get("https://testingbaba.com/old/");                      // Open the URL
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);     //implicitly wait for web page launch
 	driver.manage().window().maximize();
+	System.out.println("This is thr only chnage i have done in the project");
+	System.out.println("This is thr only chnage i have done in the project");
 	}}
 
 
